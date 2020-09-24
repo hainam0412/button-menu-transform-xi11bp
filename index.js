@@ -3,10 +3,10 @@ import './style.css';
 
 // Write Javascript code!
 const quizs = document.querySelectorAll('.quiz');
-const CnArr = [];
-const TtArr = [];
-const TdArr = [];
-const StArr = [];
+let CnArr = [];
+let TtArr = [];
+let TdArr = [];
+let StArr = [];
 
 for(let quiz of quizs){
   const buttons = quiz.querySelectorAll('button');
@@ -85,7 +85,10 @@ result.addEventListener('click', () =>{
     console.log(o.name);
   }
 
-  
+  CnArr = [];
+  TtArr = [];
+  TdArr = [];
+  StArr = [];
 
 })
 
