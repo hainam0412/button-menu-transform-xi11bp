@@ -43,8 +43,6 @@ class s {
 }
 
 result.addEventListener('click', () =>{
-  
-
   const sumSt = new s();
   const sumTd = new s();
   const sumTt = new s();
@@ -83,6 +81,18 @@ result.addEventListener('click', () =>{
 
   for(let o of finalArr){
     console.log(o.name);
+  }
+
+  if((finalArr[0].name == 'Sang tao' && finalArr[1].name == 'Tu duy') || (finalArr[1].name == 'Sang tao' && finalArr[0].name == 'Tu duy')){
+    console.log('Tu Van')
+  }else if((finalArr[0].name == 'Tu duy' && finalArr[1].name == 'Thuc te') || (finalArr[1].name == 'Tu duy' && finalArr[0].name == 'Thuc te')){
+    console.log('Su kien')
+  }else if((finalArr[0].name == 'Cam nhan' && finalArr[1].name == 'Thuc te') || (finalArr[1].name == 'Cam nhan' && finalArr[0].name == 'Thuc te')){
+    console.log('Doi ngoai')
+  }else if((finalArr[0].name == 'Cam nhan' && finalArr[1].name == 'Sang tao') || (finalArr[1].name == 'Cam nhan' && finalArr[0].name == 'Sang tao')){
+    console.log('Truyen thong')
+  }else{
+    console.log('chua biet')
   }
 
   CnArr = [];
