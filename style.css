@@ -1,0 +1,13 @@
+h1, h2 {
+  font-family: Lato;
+}
+
+button{
+  
+  cursor:pointer;
+  transition: .5s;
+}
+
+.quiz{
+  margin-bottom:10px;
+}
